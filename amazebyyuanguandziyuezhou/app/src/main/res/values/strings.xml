@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AMazeBy&lt;YuanGuandZiyueZhou></string>
+    <string name="welcome">Welcome to AMaze</string>
+    <string name="button_revisit">Revisit</string>
+    <string name="button_start">Explore</string>
+    <string name="selectSize">Select a size</string>
+    <string name="button_go_win">Go2Winning</string>
+    <string name="button_go_lose">Go2Losing</string>
+    <string name="show_maze">Maze shown</string>
+    <string name="show_solution">Solution shown</string>
+    <string name="show_visible_walls">Walls shown</string>
+    <string name="go_f_msg">Go Forward</string>
+    <string name="go_l_msg">Turn Left</string>
+    <string name="go_r_msg">Turn Right</string>
+</resources>
+

@@ -1,0 +1,4 @@
+<resources>
+    <declare-styleable name="MazePanel">
+    </declare-styleable>
+</resources>

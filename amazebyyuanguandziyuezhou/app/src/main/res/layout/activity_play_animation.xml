@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.PlayAnimationActivity">
+
+    <TextView
+        android:id="@+id/Animation"
+        android:layout_width="178dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="Animation Game"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/AnimationMaze"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:checked="false"
+        android:text="Show Maze"
+        android:textOn="@string/show_maze"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:checked="false" />
+
+    <Switch
+        android:id="@+id/AnimationSolution"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:checked="false"
+        android:text="Show Solution"
+        android:textOn="@string/show_solution"
+        app:layout_constraintEnd_toStartOf="@+id/AnimationWall"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toEndOf="@+id/AnimationMaze"
+        app:layout_constraintTop_toBottomOf="@+id/Animation"
+        tools:checked="false" />
+
+    <Switch
+        android:id="@+id/AnimationWall"
+        android:layout_width="85dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:checked="false"
+        android:text="Show Walls"
+        android:textOn="@string/show_visible_walls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/AnimationText"
+        android:layout_width="187dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Please Choose!"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnimationMaze" />
+
+    <TextView
+        android:id="@+id/AnimationEnergy"
+        android:layout_width="123dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text=" Energy: 3000"
+        app:layout_constraintBottom_toTopOf="@+id/AnimationPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/AnimationIncrease"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="13dp"
+        android:text="Size Increase"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/AnimationEnergy"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/AnimationDecrease"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="13dp"
+        android:text="Size Decrease"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toEndOf="@+id/AnimationEnergy" />
+
+    <Button
+        android:id="@+id/AnimationPause"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        android:text="Start/Pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/AnimationDecrease"
+        app:layout_constraintStart_toEndOf="@+id/AnimationIncrease" />
+
+    <yuanguandziyuezhou.cs301.cs.wm.edu.amazebyyuanguandziyuezhou.gui.MazePanel
+        android:id="@+id/Panel2"
+        android:layout_width="390dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/AnimationEnergy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

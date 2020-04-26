@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gen_algo">
+        <item>DFS</item>
+        <item>Prim</item>
+        <item>Eller</item>
+    </string-array>
+
+    <string-array name="driver_algo">
+        <item>Manual</item>
+        <item>Wizard</item>
+        <item>WallFollower</item>
+        <item>Explorer</item>
+        <item>Pledge</item>
+    </string-array>
+
+    <string-array name="theme_algo">
+        <item>Default</item>
+        <item>Blur City</item>
+        <item>Beach</item>
+        <item>Star</item>
+    </string-array>
+</resources>
