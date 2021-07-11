@@ -1,3 +1,3 @@
-Maze game running on Android App
+# This is a maze game running on Android App!
 
-Author: Ziyue Zhou
+Try it yourself for multiple difficulty levels and themes!
